@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShytingCraft | Anasayfa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js"></script>
+    <script src="https://kit.fontawesome.com/124df49da5.js" crossorigin="anonymous"></script>
+<body>
+   
+
+    <header>
+        <div class="top-bar" id="home">
+            <div class="server-info">
+                <div class="server-address"> <h3>play.shytingcraft.me </h3></div>
+            </div>
+            <div class="logo-container">
+                <img src="/images/logo.png" alt="ShytingCraft Logo" class="logo">
+                <a href="/play" class="play-now">Şimdi Oyna</a>
+            </div>
+            <div class="discord-container">
+                <a href="https://discord.gg/shytingcraft" class="discord-link"><i class="fab fa-discord"></i> DİSCORD SERVER</a>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Anasayfa</a></li>
+                <li><a href="#">Mağaza</a></li>
+                <li><a href="#">Yardım</a></li>
+                <li><a href="#">Destek</a></li>
+                <li><a href="#">Cezalar</a></li>
+                <li><a href="#">Kurallar</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="#" class="login">Giriş Yap</a>
+                <a href="#" class="register">Kayıt Ol</a>
+                <a href="#" class="cart">🛒</a>
+            </div>
+        </nav>
+    </header>
+        
+
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <section id="news" class="mb-4">
+                    <h2>Son Duyurular</h2>
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://www.turkmmo.com/wp-content/uploads/2022/09/spot-1.jpg" class="card-img" alt="Sunucu Güncellemesi">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"> %20 SEPETTE İNDİRİM KUPONLARI!</h5>
+                                    <p class="card-text"><small class="text-muted">Genel - 24.04.2024</small></p>
+                                    <p class="card-text">Hepsi Kişi başı 1 kullanımlıktır. İndirim sen beni menoz eluyem seniseviyorum</p>
+                                    <a href="#" class="btn btn-warning">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://e1.pxfuel.com/desktop-wallpaper/918/346/desktop-wallpaper-minecraft-backgrounds-minecraft.jpg" class="card-img" alt="Kredi Hediye">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">%50 KREDİ HEDİYE BAYRAM HAVASI!</h5>
+                                    <p class="card-text"><small class="text-muted">Genel - 08.04.2024</small></p>
+                                    <p class="card-text">Bayram boyunca geçerli kredi hediyesi kampanyası.</p>
+                                    <a href="#" class="btn btn-warning">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section id="server-info" class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Sunucu Bilgileri</h2>
+                        <p class="card-text">Sunucu Adresi: play.shytingcraft.com</p>
+                        <p class="card-text">Versiyon: 1.20.6</p>
+                        <p class="card-text">Sunucu Durumu: <span class="server-status text-danger">Çevrimdışı</span></p>
+                    </div>
+                </section>
+                <section id="forums" class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title"> <i class="fab fa-discord"></i> Discord</h2>
+                        <iframe src="https://ptb.discord.com/widget?id=1201599885191958640&theme=dark" width="250" height="250" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 ShytingCraft. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

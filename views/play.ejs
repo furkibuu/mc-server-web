@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShytingCraft Oynamaya Hazır mısın?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/play.css">
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js"></script>
+    <script src="https://kit.fontawesome.com/124df49da5.js" crossorigin="anonymous"></script>
+<body>
+ <header>
+        <div class="top-bar">
+            <div class="server-info">
+                <div class="player-count">0 OYUNCU AKTİF</div>
+                <div class="server-address">play.shytingcraft.me</div>
+            </div>
+            <div class="logo-container">
+                <img src="/images/logo.png" alt="ShytingCraft Logo" class="logo">
+                <a href="/play" class="play-now">Şimdi Oyna</a>
+            </div>
+            <div class="discord-container">
+                <a href="https://discord.gg/shytingcraft" class="discord-link"><i class="fab fa-discord"></i> DİSCORD SERVER</a>
+            </div>
+        </div>
+
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/" >Anasayfa</a></li>
+                <li><a href="#">Mağaza</a></li>
+                <li><a href="#">Yardım</a></li>
+                <li><a href="#">Destek</a></li>
+                <li><a href="#">Cezalar</a></li>
+                <li><a href="#">Kurallar</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="#" class="login">Giriş Yap</a>
+                <a href="#" class="register">Kayıt Ol</a>
+                <a href="#" class="cart">🛒</a>
+            </div>
+        </nav>
+    </header>
+        
+
+
+
+<section> 
+
+<div class="play">
+
+        <h1 class="">ShytingCraft sunucusunda oyna</h1>
+        
+         <li>1. Minecraft'ta <span class="highlight">Çoklu Oyuncu</span>'ya gidin, ardından <span class="highlight">Sunucu Ekle</span>'ye tıklayın</li>
+         <li>2. <span class="highlight">play.shytingcraft.me</span> adresini sunucu adres kutusuna girin ve <span class="highlight">Tamam</span>'a tıklayın</li>
+     
+<br><br>
+
+        <div class="server-address">
+            <label for="serverAddress">Sunucu Adresi</label>
+            <input type="text" id="serverAddress" value="play.shytingcraft.me" readonly>
+            <button onclick="copyToClipboard()">Kopyala</button>
+        </div>
+  
+
+    <script>
+        function copyToClipboard() {
+            var copyText = document.getElementById("serverAddress");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Sunucu adresi kopyalandı: " + copyText.value);
+        }
+    </script>
+
+
+
+</div>
+
+   </section>
+<br>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 ShytingCraft. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

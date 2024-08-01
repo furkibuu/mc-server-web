@@ -1,0 +1,64 @@
+
+
+.play {
+font-family: 'Courier New', Courier, monospace;
+background-image: url('/images/arkaplan2.jpg');;
+background-color: rgba(0, 0, 0, 0.7);
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+
+.highlight {
+    color: #ffa500;
+}
+
+.server-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.server-address label {
+    font-size: 1.2rem;
+    margin-right: 20pc;
+    margin-bottom: 10px;
+}
+
+.server-address input {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 35%;
+    text-align: center;
+    border: 15px;
+    border-color: antiquewhite;
+    border-radius: 15px;
+    background-color: #000000;
+   
+    color: #ffffff;
+}
+
+.server-address button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa500;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.server-address button:hover {
+    background-color: #363636;
+}
